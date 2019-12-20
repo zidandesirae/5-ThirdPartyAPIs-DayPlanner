@@ -5,12 +5,13 @@ body {
 }
   
 textarea {
-    width: 100%;
     background: transparent;
+    height: 100%;
+    width:100%;
     border: none;
     resize: none;
     color: #000000;
-    border: 1px solid black;
+    border-left: 1px solid black;
     padding: 10px;
 }
   
@@ -20,26 +21,8 @@ textarea {
     color: black;
     border-radius: 0;
     border-bottom: 10px solid black;
-    padding-bottom: 20px;
 }
   
-.row {
-    height: 80px;
-    border-top: 1px solid white;;
-}
-
-.hour {
-    background-color: #ffffff;
-    color: #000000;
-    text-align: right;
-    font-size: 20px;
-    padding-top: 15px;
-}
-
-
-
-
-
 .description {
     white-space: pre-wrap;
 }
@@ -49,7 +32,22 @@ textarea {
     border-radius: 15px;
 }
   
-
+.row {
+    white-space: pre-wrap;
+    height: 80px;
+    border-top: 1px solid white;;
+}
+  
+.col-md-8 {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+  
+.hour {
+    background-color: #ffffff;
+    color: #000000;
+    border-top: 1px dashed #000000;
+}
   
 .past {
     background-color: #d3d3d3;
@@ -70,11 +68,13 @@ textarea {
     border-left: 1px solid black;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    background-color: #06AED5;
     color: white;
+    height: 100%;
+    width:100%;
 }
   
-  .saveBtn i:hover {
-    font-size: 20px;
+.saveBtn i:hover {
+    font-size: 35px;
     transition: all .3s ease-in-out;
-  }
-  
+}
